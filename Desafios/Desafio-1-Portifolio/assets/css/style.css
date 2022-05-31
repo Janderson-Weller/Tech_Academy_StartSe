@@ -1,0 +1,246 @@
+/*
+*   Copyright (c) 2022 Janderson Weller <janderson.weller@gmail.com>
+*
+*            Arquivo de estilização geral da página
+*
+*    Este arquivo contém a formatação dos estilos utilizados na página, para melhor
+*    entendimento, a maioria das sessões estão comentadas.
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=M+PLUS+Rounded+1c:wght@300&family=Oswald:wght@200&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,200;1,500&display=swap');
+
+
+/* Formatação global */
+
+    * {
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        /* text-align: center; */
+        list-style: none;
+        /* font-family: 'Indie Flower', cursive; */
+        font-family: 'Poppins', 'Times New Roman', Times, serif ;
+        letter-spacing: 2px;
+        /* font-size: 14px; */
+        color: #FFFFFF;
+    }
+
+
+    /* Estilizado o h1 */
+
+        h1 {
+            font-size: 2rem;
+            /* font-family: 'Indie Flower', cursive; */
+            text-shadow: #FFFFFF 0 0.2rem 0.8rem;
+            text-transform: uppercase; /* Deixando o texto em maiúculo*/
+            text-align: center;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+
+    /* Fim h1 */
+
+
+    /*  Estilização geral da página*/
+
+        html { 
+            background: url('../img/background.jpeg') no-repeat  center center fixed;
+            /* background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed; */
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            scroll-behavior: smooth;
+        }
+   
+    /* Fim  HTML*/
+    
+/* Fim */
+
+
+/* Estilização do Header pricipal */
+
+    /*Tag header */
+
+        .header-principal {
+            display: flex;
+            justify-items: center;
+            justify-content: space-between;
+            position: fixed;
+            box-shadow: 0px 5px 2px 0px rgba(0, 0, 0, 0.2);
+            width: 100vw;
+            backdrop-filter: blur(1rem);
+            /* background-color: #961be7; */
+            z-index: 1;
+        }
+
+    /*  Fim */
+
+
+    /* Estilização imagem logo */
+
+        .div-logo img {
+            height: 3rem;
+            width: 3rem;
+            border-radius: 50%;
+            margin-left: 1.5rem;
+        }
+
+        .div-logo img:hover {
+            box-shadow:0 0 3rem 0.5rem #00bfff ;
+            border-top: #00bfff solid 2px;
+            transition-duration: 1s;
+        }
+
+    /* Fim */
+
+
+    /* Estilização div menu */
+        
+        .div-menu {
+            display: flex;
+            align-items: center;
+            height: 3rem;
+        }
+
+    /*  Fim */
+
+
+    /* Estilização lista do menu */
+        
+        .menu li {
+            display:inline;
+            padding: 0.7rem;
+            margin-right: 2rem;
+            text-transform: uppercase;
+        }
+
+        .menu li:hover {
+            border-radius: 1rem;
+            box-shadow:0 0 3rem 0.5rem #00bfff;
+            border-top: #00bfff solid 0.3rem;
+            transition-duration: 1s;
+        }
+
+        .menu span {
+            display: none;
+        }
+
+    /* Fim */
+
+/* Fim estilização header principal */
+
+
+/* Início estilização de cada section da página */
+    
+    /* Selector global de Cada Section da página */
+        
+        .section-page {
+            display: flex;
+            align-items: center; /* Alinhamento vertical dos itens da section */
+            justify-content: center; /* Alinhamento horizontal dos itens da section */
+            height: 100vh; /* Fazendo a sessão ocupar toda a tela do dispositivo*/
+            flex-direction: column;
+            /* margin-top: 3rem; */
+        }
+
+    /* Fim */
+
+
+    /* Estilização da section princial da página */
+
+        /* Criando o efeito de vidro no pseudo-elemento de section principal */
+
+            .section-page.section-principal::after {
+                content: '';
+                position: absolute;
+                height:100%;
+                width: 100%;
+                background-color: #FFFFFF 0.1;
+                backdrop-filter: blur(0.5rem);
+                z-index: -1;
+            }
+
+        /* Fim  pseudo-elemento de section principal */
+
+
+        /* Estilizando os elemento da section principal */
+            
+            .div-section-principal {
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                flex-direction: column;
+                margin-top: 3rem;
+                height: 100vh;
+            }
+
+        /* Fim elemento da section principal */
+
+
+        /* Estilizando  div com o conteúdo do texto inicial, para uso de js */
+
+            /* Div que contém o texto */
+
+                .button-animation-divi {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    overflow: hidden;
+                    animation: show-text 5s;
+                }
+
+                /* Destacando o texto desenvolvedores */
+            
+                    .dev {
+                        background-color: #bb67f3;
+                    }
+
+                /* Fim texto Desenvolvedores */
+
+                /* Estilizando o texto Let's Code */
+
+                    .dev-code {
+                        background-color: #bb67f3;
+                        position: sticky;
+                    }
+
+                /* Fim Let's Code */
+
+        /* Fim div texto */
+
+    /* Fim section principal */
+
+
+
+    /* Estilizando as demais sections da página, exceto o footer */
+
+        .section-portfolio, .section-bootcamp, .section-contato {
+            justify-content: space-evenly;
+        }
+
+    /* Fim */
+
+
+    /* Estilizado o footer principal */
+
+        .footer-principal {
+            display: flex;
+            height: 10vh;
+            align-items: center;
+            justify-content: space-around;
+            box-shadow: 5px 0 2px 0px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(1rem);
+            box-shadow:0 0 3rem 0.5rem #00bfff;
+            
+        }
+
+    /* Fim footer */
+    
+/* Fim sections */
+
+

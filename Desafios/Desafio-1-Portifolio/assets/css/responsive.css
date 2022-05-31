@@ -1,0 +1,454 @@
+/*
+*   Copyright (c) 2022 Janderson Weller <janderson.weller@gmail.com>
+*
+*            Arquivo de estilização responsive
+*
+*    Este arquivo contém a formatação dos estilos utilizados para a responsividade, para melhor
+*    entendimento, a maioria das sessões estão comentadas.
+*/
+
+/* Definindo os tamanhos de telas */
+
+    /* Tela 1250x1066 */
+
+        @media (max-width: 1250px) {
+            
+            /* Dando margem após a quebra */
+            
+                .cards-list {
+                    margin-top: 1rem;
+                }
+
+            /* Fim */
+
+
+            /* Defenindo o tamanho da section de contato */
+            
+                .section-contato {
+                    height: 70vh;
+                }
+
+            /* Fim */
+        }
+
+    /* Fim tela 1250x1066 */
+
+
+    /* Tela 850x1060 */
+
+        @media (max-width: 850px) {
+
+            .div-texto-h1 {
+                font-size: 1rem;
+            }
+
+            p {
+                font-size: .6rem;
+            }
+
+            .div-section-principal p{
+                font-size: 1rem;
+            }
+
+            /* Redefinindo os cards */
+
+                .cards-list {
+                    height: 16rem;
+                    width: 12rem;
+                }
+
+                .cards-header {
+                    font-size: .7rem;
+                }
+
+            /*  Fim cards */
+
+
+            /* Redefinindo o tamanho da section de contato */
+                
+                .section-contato {
+                    height: 70vh;
+                }
+
+            /* Fim contato */
+
+
+            /* Redefinindo o tamanho do card geral que contém a social media */
+            
+                /* Tamanho de article */
+                    .social-media {
+                        height: 10rem;
+                        /* overflow: hidden; */
+                    }
+                
+                /* Fim */
+                
+
+                /* Lista de ancoras  */
+
+                    .social-media-list li {
+                        height: 2.5rem;
+                        width: 10rem;
+                    }
+
+                /* Fim lista de ancoras */
+
+                
+                /* Tamanho imagens de ancoras */
+
+                    .social-media li img {
+                        height: 1.5rem;
+                    }
+
+                /* Fim */
+
+            /* Fim  card social */
+            
+        }
+    
+    /* Fim Tela 850px */
+
+
+    /* Tela até 750px */
+
+        @media (max-width: 750px) {
+
+            /* Monstrando o menu oculto */
+
+                /* Tirando a ul de exibição */
+
+                    .menu .ul-mostrar {
+                        display: none;
+                    }
+                /*  Fim */
+
+                /* Exibindo o texto     MENU    que estava oculto */
+
+                    .menu span {
+                        display: block;
+                        margin-right: 2rem;
+                    }
+                
+                /* Fim */
+
+
+                /* Exibindo novamente a ul  e aplicando displau flex */
+
+                    .menu:hover .ul-mostrar {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-end;
+                        justify-content: flex-end;
+                        border-radius: 1rem;
+                        background-color: #5b1c80;
+                        margin-top: 9rem;
+                    }
+
+                /* Fim ul exibição */
+
+
+                /* Centralizando as li */
+                   
+                    .menu li {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    
+                    }
+                
+                /*  Fim li */
+
+            /* Fim exibição menu */
+
+
+            /* Formatação do textos */
+
+                .div-section-principal h1 {
+                    font-size: 1.7rem;
+                }
+            
+                .div-texto-h1 h1 {
+                    font-size: 1.2rem;
+                }
+
+            /* Fim */
+
+
+            /* Redefinindo os cards */
+
+                .cards-list {
+                    height: 18rem;
+                    width: 13rem;
+                }
+
+
+            /* Redefinindo o tamanho da section de contato */
+                
+                .section-contato {
+                    height: 50vh;
+                }
+
+            /* Fim */
+        }
+
+    /* Fim tela 750 */
+
+
+    /* Tela de até 550px */
+
+        @media (max-width: 550px) {
+
+            /* Formatação dos textos */
+
+                /* Texto section principal */
+
+                    /* Texto cabeçalho h1  */
+
+                        .div-section-principal h1 {
+                            font-size: 1.5rem;
+                        }
+
+                    /* Fim */
+                
+
+                    /* Texto parágrafo Section Principal */
+
+                        .section-principal p {
+                            font-size: .7rem;
+                        }
+
+                    /* Fim */
+                        
+                /* Fim texto section principal */
+
+
+                /* Texto h1 das demanis sections */
+
+                    .div-texto-h1 h1 {
+                        font-size: 1rem;
+                    }
+                
+                /* Fim */
+                    
+            /* Fim formatação de textos */
+
+
+            /* Section portfolio */
+
+                /*  Redimensionando os cards */
+
+                    .cards-list {
+                        /* justify-content: space-evenly; */
+                        height: 16rem;
+                        width: 11rem;
+                    }
+
+                /* Fim */
+
+
+                /* Alterando tamanho cabeçalho dos cards */
+
+                    .cards-list h2 {
+                        font-size: .8rem;
+                    }
+
+                /* Fim */
+
+            /* Fim section portfólio */
+
+            
+            /* Section Contato */
+
+                /* Redimensionando o tamanho da section */
+
+                    .section-contato {
+                        height: 50vh;
+                    }
+                
+                /* Fim */
+
+
+                /* Redefinindo o tamanho do card geral que contém a social media */
+
+                    .social-media {
+                        height: 8rem;
+                    }
+                    
+                    .social-media-list li {
+                        height: 1.5rem;
+                        width: 6rem;
+                    }
+
+                    .social-media li img {
+                        height: 1rem;
+                    }
+
+                    .social-media-list li a:hover {
+                        transform: translate(.9rem, -.9rem);
+                    }
+
+                    p, .social-media span {
+                        font-size: .6rem;
+                    }
+
+                /* Fim  card social media */
+            
+            /* Fim section contato */
+    
+        }
+
+    /* Fim tela 550px */
+
+    /* Tela 450px */ 
+
+        @media (max-width: 450px) {
+
+            /* Formatação dos textos */
+
+                .div-section-principal h1 {
+                    font-size:1rem;
+                }
+
+                .div-section-principal p {
+                    font-size: .5rem;
+                }
+            
+                .div-texto-h1 h1, .div-section-principal span {
+                    font-size: .7rem;
+                }
+
+            /* Fim formatação dos textos */
+
+
+            /* Section portfolio, redefinindo o tamanhos dos cards */
+
+                .cards-list {
+                    justify-content: space-between;
+                    height: 15rem;
+                    width: 10rem;
+                }
+
+                .cards-list h2 {
+                    font-size: .7rem;
+                }
+
+                .cards-footer img {
+                    height: 1rem;
+                }
+
+            /* Fim */
+
+
+            /* Redefinindo o tamanho do card que contém a social media */
+
+                .social-media {
+                    height: 8rem;
+                }
+
+                .social-media-list li {
+                    height: 1.5rem;
+                    width: 6rem;
+                }
+
+                .social-media li img {
+                    height: 1rem;
+                }
+
+                p, .social-media span, .footer-principal {
+                    font-size: .5rem;
+                }
+
+                .footer-principal i svg {
+                    height: .6rem;
+                }
+
+            /* Fim  card social media */
+        }
+
+    /* Fim tela 450px */
+
+
+    /* Tela 350px */ 
+
+        @media (max-width: 350px) {
+
+            /* Redefinindo o tamano dos links do menu principal */
+
+                .menu li a {
+                    font-size: .5rem;
+                }
+            
+            /* Fim  menu */
+            
+
+            /* Formatação dos textos */
+
+                /* Redefinindo o h1 */
+
+                    .div-section-principal h1, span {
+                        font-size: .8rem;
+                        flex-wrap: wrap;
+                    }
+                
+                    .div-texto-h1 h1 {
+                        font-size: .6rem;
+                        flex-wrap: wrap;
+                    }
+
+                /* Fim h1 */
+
+
+                /* Redefinindo p da página principal */
+                    
+                    .button-animation-divi p {
+                        font-size: 0.45rem;
+                    }
+
+                /* Fim parágrafo */
+
+
+            /* Fim Formatação dos textos */
+
+
+            /* Redefininco todas as Sections que contém card */
+
+                .section-portfolio, .section-bootcamp {
+                    height: auto;
+                }
+                .section-portfolio .div-texto-h1, .section-bootcamp .div-texto-h1 {
+                    margin-top: 4rem;
+                }
+        
+            /* Fim sections card */
+
+
+            /* Redefinindo o tamanho do card que contém a social media */
+
+                .social-media {
+                    height: 8rem;
+                }
+
+                .social-media-list li {
+                    height: 1.5rem;
+                    width: 4rem;
+                }
+
+                .social-media li img {
+                    height: .8rem;
+                }
+
+                p, .social-media span, .footer-principal {
+                    font-size: .4rem;
+                }
+
+                .footer-principal i svg {
+                    /* width="24"  */
+                    height: .6rem;
+                }
+
+            /* Fim card social media */
+        }
+
+    /* Fim tela 350px */
+
+/* Fim tamanhos de telas */

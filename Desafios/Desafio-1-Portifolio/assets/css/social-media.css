@@ -1,0 +1,73 @@
+/*
+*   Copyright (c) 2022 Janderson Weller <janderson.weller@gmail.com>
+*
+*            Arquivo de estilização sessão social media
+*
+*    Este arquivo contém a formatação dos estilos utilizados na seção social media, para melhor
+*    entendimento, a maioria das sessões estão comentadas.
+*/
+
+/* Estilizando a section contato */
+
+    /* Estilização de social media article */
+
+        .social-media {
+            height: 20rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid;
+            border-radius: 1rem;
+            backdrop-filter: blur(0.5rem);
+            /* background-color: rebeccapurple; */
+        }
+    
+    /* Fim */
+    
+
+    /* Estilização da lista */
+
+        .social-media-list li {
+            display: inline-flex;
+            border: 1px solid;
+            border-radius: .5rem;
+            height: 5rem;
+            width: 15rem;
+            transform:  rotate(-30deg) skew(25deg) scale(0.8);
+        }
+    
+    /* Fim */
+
+
+    /* Estilização das âncoras */
+
+        .social-media-list li a {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            /* transform: translate(40px, -40px); */
+            width: 100%;
+            height: 100%;
+            border-radius: .5rem;
+        }
+
+        .social-media-list li a:hover {
+            background-color: antiquewhite;
+            transform: translate(1.3rem, -1.3rem);
+            background-color: black;
+            transition: 2s;
+        }
+
+    /* Fim */
+
+
+    /* Estilização imagens */
+
+        .social-media li img {
+            height: 3rem;
+        }
+
+    /* Fim */
+
+
+/* Fim estilização */

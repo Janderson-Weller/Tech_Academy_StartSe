@@ -1,0 +1,154 @@
+/*
+*   Copyright (c) 2022 Janderson Weller <janderson.weller@gmail.com>
+*
+*            Arquivo de estilização dos para efeito máquina de escrever
+*
+*    Este arquivo contém a formatação dos estilos utilizados nas animações, para melhor
+*    entendimento, a maioria das sessões estão comentadas.
+*/
+
+/* Definindo o tamanho mínimo da tela para a animação ocorrer */
+
+    @media (min-width: 300px) {
+
+        /* Efeito máquina de escrever */
+            
+            /* Estilização do h1 */
+
+                .typeWriter {
+                    width: 100%;
+                    animation: whiter 4s steps(25), cursor .4s infinite alternate;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    border-right: 2px solid;
+                }
+
+            /* Fim */
+
+
+            /* Animação do h1 */
+            
+                @keyframes whiter {
+                    from {
+                        width: 0;
+                    }
+                }
+
+            /* Fim */
+
+
+            /* Animação do cursor */
+
+                @keyframes cursor {
+                    40% {
+                        border-color: #000;
+                    }
+                    
+                }
+
+            /* Fim */
+
+
+        /* Fim Animação máquina de escrever */
+
+
+        /* Animação título da sessão dos cards */
+
+            /* Definindo animação do título */
+    
+                .div-texto-h1 {
+                    animation: cards 1s infinite alternate;
+                }
+
+            /* Fim */
+
+
+            /* Início da animação */
+
+                @keyframes cards {
+
+                    from {
+                        backdrop-filter: blur(.5rem); /* Efeito de vidro */
+                        border-radius: .2rem;
+                        margin-top: 1rem;
+                        /* padding: .5rem; */
+                        box-shadow:0 0 0.2rem 0.5rem #00bfff;
+                    }
+                    
+                }
+
+            /* Fim */
+
+        /* Fim animação dos cards */
+    }
+
+/* Fim animação media query */  
+
+
+/* Animação do texto contido no parágrafo Principal da tela inicial */
+
+    /* Início animação */
+
+        @keyframes show-text {
+
+            0% {
+                animation-delay: 5s;
+                opacity: 0;
+                transform: translate3D(-100%, 0px, 0px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translate3D(0px, 0px, 0px);
+                transition: 1s all ease;
+            }
+
+        }
+
+    /* Fim */
+
+/* Fim animação */
+
+
+/* Animação texto span */
+
+    /* Definindo a animação */
+
+        .dev-code {
+            border-radius: 0.2rem;
+            animation: text-alert .4s infinite alternate;
+        }
+    /* Fim */
+
+
+    /* Início da animação */
+
+        @keyframes text-alert {
+            
+            from {
+                background-color: #fdfafa;
+                border-radius: 0.2rem;
+            }
+
+        }
+    /* Fim */
+    
+/* Fim animação texto span */
+
+/* Animação Footer */
+
+    /* .footer-principal {
+        animation: animation-footer 10s infinite alternate;
+    }
+
+    @keyframes animation-footer {
+        
+        from {
+            box-shadow:0 0 1rem 0.5rem #00bfff;
+        }
+        
+    } */
+
+/* Fim */
+
+

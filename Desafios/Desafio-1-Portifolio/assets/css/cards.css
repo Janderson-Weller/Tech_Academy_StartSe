@@ -1,0 +1,132 @@
+/*
+*   Copyright (c) 2022 Janderson Weller <janderson.weller@gmail.com>
+*
+*            Arquivo de estilização dos cards
+*
+*    Este arquivo contém a formatação dos estilos utilizados na seção de cards, para melhor
+*    entendimento, a maioria das sessões estão comentadas.
+*/
+
+/* Estilizando os div que contém os cards */
+
+    .div-list-card {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+/* Fim */
+
+
+/* Estilizando os cards */
+
+    /* Div que gera a lista dos Cards */
+        
+        .cards-list {
+            display: flex;
+            justify-content: center;
+            height: 25rem; /* Aproximadamente 350px */
+            width: 18rem; /* Aproximadamente 250px */
+            border: #FFFFFF solid 2px;
+            border-radius: 3%;
+            /* background-color: #FFFFFF 0.8; */
+            backdrop-filter: blur(1rem); /* Efeito de vidro */
+        }
+
+    /* Fim lista cards */
+
+
+    /* Elementos de cards */
+
+        .cards-list-align {
+            display: flex;
+            /* align-content: center; */
+            justify-content: space-between;
+            flex-direction: column;
+            width: 16rem;
+            text-align: left;
+            margin: 1rem;
+        }
+
+    /* Fim */
+
+    
+    /* Estilizado as bordas superiores dos cards */
+
+            .red {
+                border-top: solid #f82a2a;
+            }
+
+            .blue {
+                border-top: solid #395cfa;
+            }
+
+            .gold {
+                border-top: solid #e0bf04;
+            }
+
+            .green {
+                border-top: solid #73f835;
+            }
+
+    /* Fim estilização bordas */
+
+
+    /* Header dos cards */
+
+        .cards-header {
+            text-align: center;
+        }
+
+    /* Fim estilização do header dos cards */
+
+
+    /* Estilização do texto dos cards */
+        .cards-text {
+            height: 10rem;
+        }
+
+    /* Fim estilização do texto do card*/
+
+
+    /* Estilização do span dos cards */
+
+        .cards-span {
+            text-align: center;
+            max-width: 6rem;
+            font-size: 0.7rem;
+            padding: 0.3rem;
+            border-top: solid #f82a2a 0.2rem;
+            /* border-bottom: solid 0.1rem; */
+            border-radius: 3rem;
+            /* background-color: #73f835; */
+
+        }
+        
+        .cards-span:hover {
+            border-radius: 1rem;
+            box-shadow:0 0 3rem 0.5rem #00bfff ;
+            transition-duration: 1s;
+        }
+
+    /*  Fim */
+
+    
+    /* Estilização do footer do card */
+
+        .cards-footer {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        /* Definindo o tamanho das imagens do rodapé footer do card */
+        .cards-footer img {
+            max-height: 2rem;
+            max-width: 2rem;
+        }
+        
+    /* Fim estilização do footer do card */
+
+
+/* Fim estilização dos cards */

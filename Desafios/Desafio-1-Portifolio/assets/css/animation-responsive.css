@@ -1,0 +1,30 @@
+
+
+
+  /* Animação do cursor */
+
+  /* Efeito máquina de escrever */
+
+    /* Estilização do h1 */
+    .button-animation-divi {
+        
+        width: 90%;
+        /* background-color: yellow; */
+        /* font-size: 12px; */
+        /* text-align: center; */
+        /* width: 100%;
+        animation: whiter 4s steps(25), cursor .4s infinite alternate;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 2px solid; */
+    }
+
+    /* Animação do cursor */
+    @keyframes cursor {
+        40% {
+            border-color: #000;
+        }
+        
+    }
+
+/* Fim animação máquina de escrever */
