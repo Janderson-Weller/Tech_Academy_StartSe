@@ -7,12 +7,23 @@
 *    entendimento, a maioria das sessões estão comentadas.
 */
 
+
 /* Definindo os tamanhos de telas */
 
     /* Tela 1250x1066 */
 
-        @media (max-width: 1250px) {
+        @media (max-width: 1350px) {
+
+            .section-portfolio, .section-bootcamp, .section-principal, .section-page-info {
+                height: auto;
+            }
+
+
+            .section-page-info {
+                margin-top: -3%;
+            }
             
+
             /* Dando margem após a quebra */
             
                 .cards-list {
@@ -34,31 +45,23 @@
     /* Fim tela 1250x1066 */
 
 
-    /* Tela 850x1060 */
+    /* Tela 1000x1060 */
 
-        @media (max-width: 850px) {
+        @media (max-width: 1000px) {
 
-            .div-texto-h1 {
-                font-size: 1rem;
+            .container-perfil .perfil {
+                transform: translateY(50%);
             }
 
-            p {
-                font-size: .6rem;
+            .container-perfil h1, .div-texto-h1 h1 {
+                font-size: 1.8rem;
             }
 
-            .div-section-principal p{
-                font-size: 1rem;
-            }
 
             /* Redefinindo os cards */
 
-                .cards-list {
-                    height: 16rem;
-                    width: 12rem;
-                }
-
                 .cards-header {
-                    font-size: .7rem;
+                    font-size: .8rem;
                 }
 
             /*  Fim cards */
@@ -106,12 +109,12 @@
             
         }
     
-    /* Fim Tela 850px */
+    /* Fim Tela 1000px */
 
 
-    /* Tela até 750px */
+    /* Tela até 870px */
 
-        @media (max-width: 750px) {
+        @media (max-width: 870px) {
 
             /* Monstrando o menu oculto */
 
@@ -161,24 +164,11 @@
             /* Fim exibição menu */
 
 
-            /* Formatação do textos */
-
-                .div-section-principal h1 {
-                    font-size: 1.7rem;
-                }
-            
-                .div-texto-h1 h1 {
-                    font-size: 1.2rem;
-                }
-
-            /* Fim */
-
-
             /* Redefinindo os cards */
 
                 .cards-list {
-                    height: 18rem;
-                    width: 13rem;
+                    /* height: 23rem; */
+                    width: 18rem;
                 }
 
 
@@ -191,44 +181,54 @@
             /* Fim */
         }
 
-    /* Fim tela 750 */
+    /* Fim tela 870 */
 
 
-    /* Tela de até 550px */
+    /* Tela de até 650px */
 
-        @media (max-width: 550px) {
+        @media (max-width: 650px) {
+
+            /* Cabeçalho e menu */
+                
+            .div-logo img{
+                height: 1.5rem;
+                width: 1.5rem;
+            }
+
+            .div-menu {
+                height: 1.5rem;
+            }
+
+
+            /* Fim */
 
             /* Formatação dos textos */
 
                 /* Texto section principal */
 
                     /* Texto cabeçalho h1  */
-
-                        .div-section-principal h1 {
+        
+                        .container-perfil h1, .div-texto-h1 h1  {
                             font-size: 1.5rem;
                         }
 
                     /* Fim */
-                
 
-                    /* Texto parágrafo Section Principal */
 
-                        .section-principal p {
+                    /* Redefinindo p da página principal */
+                    
+                        .button-animation-divi p {
                             font-size: .7rem;
                         }
+                        
+                        .div-section-principal span {
+                            font-size: 1rem;
+                        }
 
-                    /* Fim */
+                    /* Fim parágrafo */
                         
                 /* Fim texto section principal */
 
-
-                /* Texto h1 das demanis sections */
-
-                    .div-texto-h1 h1 {
-                        font-size: 1rem;
-                    }
-                
-                /* Fim */
                     
             /* Fim formatação de textos */
 
@@ -238,9 +238,8 @@
                 /*  Redimensionando os cards */
 
                     .cards-list {
-                        /* justify-content: space-evenly; */
-                        height: 16rem;
-                        width: 11rem;
+                        height: 21rem;
+                        width: 14rem;
                     }
 
                 /* Fim */
@@ -248,7 +247,7 @@
 
                 /* Alterando tamanho cabeçalho dos cards */
 
-                    .cards-list h2 {
+                    .cards-header h2, .cards-list p  {
                         font-size: .8rem;
                     }
 
@@ -269,14 +268,10 @@
 
 
                 /* Redefinindo o tamanho do card geral que contém a social media */
-
-                    .social-media {
-                        height: 8rem;
-                    }
                     
                     .social-media-list li {
-                        height: 1.5rem;
-                        width: 6rem;
+                        height: 1.8rem;
+                        width: 7rem;
                     }
 
                     .social-media li img {
@@ -287,7 +282,7 @@
                         transform: translate(.9rem, -.9rem);
                     }
 
-                    p, .social-media span {
+                    .social-media span {
                         font-size: .6rem;
                     }
 
@@ -297,43 +292,28 @@
     
         }
 
-    /* Fim tela 550px */
+    /* Fim tela 650px */
 
-    /* Tela 450px */ 
+    /* Tela 580px */ 
 
-        @media (max-width: 450px) {
+        @media (max-width: 580px) {
 
-            /* Formatação dos textos */
-
-                .div-section-principal h1 {
-                    font-size:1rem;
-                }
-
-                .div-section-principal p {
-                    font-size: .5rem;
-                }
-            
-                .div-texto-h1 h1, .div-section-principal span {
-                    font-size: .7rem;
-                }
-
-            /* Fim formatação dos textos */
-
+            .div-texto-h1 h1 {
+                font-size: 1rem;
+            }
 
             /* Section portfolio, redefinindo o tamanhos dos cards */
 
-                .cards-list {
-                    justify-content: space-between;
-                    height: 15rem;
-                    width: 10rem;
+                .cards-list h2, .cards-list span {
+                    font-size: .8rem;
                 }
 
-                .cards-list h2 {
+                .cards-list p {
                     font-size: .7rem;
                 }
 
                 .cards-footer img {
-                    height: 1rem;
+                    height: 1.5rem;
                 }
 
             /* Fim */
@@ -354,7 +334,7 @@
                     height: 1rem;
                 }
 
-                p, .social-media span, .footer-principal {
+                .social-media span, .footer-principal {
                     font-size: .5rem;
                 }
 
@@ -365,10 +345,37 @@
             /* Fim  card social media */
         }
 
-    /* Fim tela 450px */
+    /* Fim tela 580px */
 
 
-    /* Tela 350px */ 
+    /* Tela 450px */ 
+
+        @media (max-width: 450px) {
+
+            /* Estilização section principal */
+
+                .container-perfil .perfil {
+                    height: 8rem;
+                    width: 8rem;
+                }
+
+        /* Fim */
+            
+            /* Redefinindo o h1 */
+
+                .container-perfil .typeWriter, .div-texto-h1 h1 {
+                    font-size: 1rem;
+                    /* flex-wrap: wrap; */
+                }
+
+            /* Fim h1 */
+
+        }
+
+    /* Fim Tela 450px */
+    
+
+    /* Tela 350px */
 
         @media (max-width: 350px) {
 
@@ -385,15 +392,11 @@
 
                 /* Redefinindo o h1 */
 
-                    .div-section-principal h1, span {
-                        font-size: .8rem;
-                        flex-wrap: wrap;
+                .container-perfil .typeWriter, .div-texto-h1 h1 {
+                        font-size: .7rem;
+                        /* flex-wrap: wrap; */
                     }
-                
-                    .div-texto-h1 h1 {
-                        font-size: .6rem;
-                        flex-wrap: wrap;
-                    }
+
 
                 /* Fim h1 */
 
@@ -401,7 +404,11 @@
                 /* Redefinindo p da página principal */
                     
                     .button-animation-divi p {
-                        font-size: 0.45rem;
+                        font-size: .5rem;
+                    }
+                    
+                    .div-section-principal span {
+                        font-size: 0.6rem;
                     }
 
                 /* Fim parágrafo */
@@ -412,11 +419,32 @@
 
             /* Redefininco todas as Sections que contém card */
 
+                .cards-list {
+                    /* height: 18rem; */
+                    width: 12rem;
+                }
+
+                .cards-list h2 {
+                    font-size: .6rem;
+                }
+
+                .cards-list span {
+                    font-size: .5rem;
+                }
+
+                /* .cards-footer img {
+                    height: 1rem;
+                } */
+
                 .section-portfolio, .section-bootcamp {
                     height: auto;
                 }
-                .section-portfolio .div-texto-h1, .section-bootcamp .div-texto-h1 {
+                .div-section-principal h1, .section-portfolio .div-texto-h1, .section-bootcamp .div-texto-h1 {
                     margin-top: 4rem;
+                }
+
+                .section-portfolio p, .section-bootcamp p {
+                    font-size: .6rem;
                 }
         
             /* Fim sections card */
@@ -437,7 +465,7 @@
                     height: .8rem;
                 }
 
-                p, .social-media span, .footer-principal {
+                .social-media span, .footer-principal {
                     font-size: .4rem;
                 }
 

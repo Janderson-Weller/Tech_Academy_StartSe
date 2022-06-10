@@ -30,25 +30,19 @@
     /* Estilizado o h1 */
 
         h1 {
-            font-size: 2rem;
-            /* font-family: 'Indie Flower', cursive; */
+            font-size: 3rem;
             text-shadow: #FFFFFF 0 0.2rem 0.8rem;
             text-transform: uppercase; /* Deixando o texto em maiúculo*/
-            text-align: center;
-            flex-wrap: wrap;
             text-align: center;
         }
 
     /* Fim h1 */
-
+    
 
     /*  Estilização geral da página*/
 
         html { 
             background: url('../img/background.jpeg') no-repeat  center center fixed;
-            /* background-repeat: no-repeat;
-            background-position: center center;
-            background-attachment: fixed; */
             -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
@@ -73,8 +67,11 @@
             box-shadow: 0px 5px 2px 0px rgba(0, 0, 0, 0.2);
             width: 100vw;
             backdrop-filter: blur(1rem);
+            top: 0;
+            left: 0;
+            /* -webkit-backdrop-filter: blur(1rem); */
             /* background-color: #961be7; */
-            z-index: 1;
+            z-index: 10;
         }
 
     /*  Fim */
@@ -103,7 +100,7 @@
         .div-menu {
             display: flex;
             align-items: center;
-            height: 3rem;
+            height: 4rem;
         }
 
     /*  Fim */
@@ -142,9 +139,8 @@
             display: flex;
             align-items: center; /* Alinhamento vertical dos itens da section */
             justify-content: center; /* Alinhamento horizontal dos itens da section */
-            height: 100vh; /* Fazendo a sessão ocupar toda a tela do dispositivo*/
+            height: 100vh; /*Fazendo a sessão ocupar toda a tela do dispositivo*/
             flex-direction: column;
-            /* margin-top: 3rem; */
         }
 
     /* Fim */
@@ -154,7 +150,7 @@
 
         /* Criando o efeito de vidro no pseudo-elemento de section principal */
 
-            .section-page.section-principal::after {
+            /* .section-principal::after {
                 content: '';
                 position: absolute;
                 height:100%;
@@ -162,21 +158,51 @@
                 background-color: #FFFFFF 0.1;
                 backdrop-filter: blur(0.5rem);
                 z-index: -1;
-            }
+            } */
 
         /* Fim  pseudo-elemento de section principal */
 
 
         /* Estilizando os elemento da section principal */
-            
-            .div-section-principal {
+
+            .container-perfil {
                 display: flex;
                 align-items: center;
-                justify-content: space-evenly;
+                justify-content: center;
                 flex-direction: column;
-                margin-top: 3rem;
-                height: 100vh;
+                width: 100%;
+                height: 80vh;
+                background-image: url(../img/capa1.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
             }
+
+            .container-perfil .perfil {
+                height: 16rem;
+                width: 16rem;
+                border-radius: 50%;
+                transform: translateY(50%);
+                z-index: 1;
+            }
+
+            /* Grid da página */
+
+                .section-page-info {
+                    margin-top: -5%;
+                    justify-content: center;
+                }
+
+                .section-page-info .div-list-card {
+                    margin-top: 10%;
+                }
+
+                .section-page-info .cards-list-align {
+                    justify-content: space-evenly;
+                }
+
+            /* Fim */
+
 
         /* Fim elemento da section principal */
 
@@ -191,6 +217,7 @@
                     justify-content: center;
                     align-items: center;
                     overflow: hidden;
+                    margin-top: 1rem;
                     animation: show-text 5s;
                 }
 
@@ -206,7 +233,8 @@
 
                     .dev-code {
                         background-color: #bb67f3;
-                        position: sticky;
+                        font-size: 2rem;
+                        margin-top: 1.5rem;
                     }
 
                 /* Fim Let's Code */
@@ -215,8 +243,17 @@
 
     /* Fim section principal */
 
+    
+    /* Colocando margin nos textos de cada categoria */
+        
+        .div-texto-h1 {
+            margin-top: 3rem;
+            animation: cards 1s infinite alternate;
+        }
 
-
+    /*  Fim */
+    
+    
     /* Estilizando as demais sections da página, exceto o footer */
 
         .section-portfolio, .section-bootcamp, .section-contato {

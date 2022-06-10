@@ -9,17 +9,18 @@
 
 /* Definindo o tamanho mínimo da tela para a animação ocorrer */
 
-    @media (min-width: 300px) {
+    @media (min-width: 250px) {
 
         /* Efeito máquina de escrever */
             
             /* Estilização do h1 */
 
-                .typeWriter {
-                    width: 100%;
-                    animation: whiter 4s steps(25), cursor .4s infinite alternate;
+                .container-perfil .typeWriter {
+                    max-width: 100%;
+                    animation: whiter 6s steps(25) infinite alternate, cursor .4s infinite alternate;
                     white-space: nowrap;
                     overflow: hidden;
+                    padding-right: .2rem;
                     border-right: 2px solid;
                 }
 
@@ -30,7 +31,7 @@
             
                 @keyframes whiter {
                     from {
-                        width: 0;
+                        max-width: 0;
                     }
                 }
 
@@ -54,15 +55,6 @@
 
         /* Animação título da sessão dos cards */
 
-            /* Definindo animação do título */
-    
-                .div-texto-h1 {
-                    animation: cards 1s infinite alternate;
-                }
-
-            /* Fim */
-
-
             /* Início da animação */
 
                 @keyframes cards {
@@ -70,8 +62,7 @@
                     from {
                         backdrop-filter: blur(.5rem); /* Efeito de vidro */
                         border-radius: .2rem;
-                        margin-top: 1rem;
-                        /* padding: .5rem; */
+                        /* margin-top: .2rem; Efeito onda */
                         box-shadow:0 0 0.2rem 0.5rem #00bfff;
                     }
                     
@@ -85,7 +76,7 @@
 /* Fim animação media query */  
 
 
-/* Animação do texto contido no parágrafo Principal da tela inicial */
+/* Animação do perfil contido na Section Principal da tela inicial */
 
     /* Início animação */
 
@@ -94,7 +85,7 @@
             0% {
                 animation-delay: 5s;
                 opacity: 0;
-                transform: translate3D(-100%, 0px, 0px);
+                transform: translate3D(0, 0px, -100%);
             }
 
             100% {
@@ -135,19 +126,42 @@
     
 /* Fim animação texto span */
 
-/* Animação Footer */
+/* Animação Footer card */
 
-    /* .footer-principal {
-        animation: animation-footer 10s infinite alternate;
+    .cards-footer a {
+        /* animation: cards 1s infinite alternate; */
+        animation: pisca-img-footer-card 1s infinite alternate;
     }
 
-    @keyframes animation-footer {
+    @keyframes pisca-img-footer-card {
         
         from {
-            box-shadow:0 0 1rem 0.5rem #00bfff;
+            backdrop-filter: blur(.5rem); /* Efeito de vidro */
+            border: #00bfff;
+            border-radius: 1rem;
+            box-shadow:0 0 2px 2px #00bfff;
         }
         
-    } */
+    }
+
+/* Fim */
+
+/* Animação coração */
+
+    .coracao {
+        animation: coracao 1s infinite alternate;
+    }
+
+    @keyframes coracao {
+        
+        from {
+            background-color: #00bfff;
+            /* border-radius: .1rem;
+            margin-top: .2rem; */
+            box-shadow:0 0 0.2rem 0.5rem #00bfff;
+        }
+        
+    }
 
 /* Fim */
 

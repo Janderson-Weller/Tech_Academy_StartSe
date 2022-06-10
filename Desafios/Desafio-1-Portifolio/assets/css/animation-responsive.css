@@ -27,4 +27,23 @@
         
     }
 
-/* Fim animação máquina de escrever */
+/* Tirando a animação onda */
+    
+    @media (max-width: 550px) {
+
+        /* Início da animação */
+
+        @keyframes cards {
+
+            from {
+                backdrop-filter: blur(.5rem); 
+                border-radius: .2rem;
+                box-shadow:0 0 0.2rem 0.5rem #00bfff;
+            }
+        
+        }
+    }
+
+
+/* Fim */
+/*  */
